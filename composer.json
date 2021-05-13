@@ -1,0 +1,16 @@
+{
+  "name": "dboone/sdev328/diner",
+  "authors": [
+    {
+      "name": "David Boone",
+      "email": "Dboone2@mail.greenriver.edu"
+    },
+    {
+      "name": "Raju Shrestha",
+      "email": "rshrestha9@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
