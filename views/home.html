@@ -15,17 +15,24 @@
 </head>
 
 
-<body>
+<body class="container">
 <h3>Cupcake Fundraiser</h3>
 
-<form>
+<form action="#">
     <div class="form-group">
         <label for="name">Your name</label>
         <input type="text" class="form-control" id="name" placeholder="Please input your name.">
     </div>
     <div class="form-group">
-        <label for="flavors">Cupcake flavors:</label>
-
+        <label>Cupcake flavors:</label>
+        <div class="col-sm-4">
+            <repeat group="{{@flavors}}" value="{{@flavor}}">
+                <label><input type="checkbox" name="meal"
+                              id="{{@flavor}}" value="{{@flavor}}"
+                    <check if="{{@flavor==@userFlavors}}">checked="checked"</check>
+                    > {{(@flavor)}}</input></label><br>
+            </repeat>
+        </div>
     </div>
 
     <input type="submit" value="Submit">
